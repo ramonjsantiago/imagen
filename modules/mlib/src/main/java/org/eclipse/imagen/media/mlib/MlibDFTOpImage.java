@@ -19,7 +19,6 @@ package org.eclipse.imagen.media.mlib;
 
 import java.awt.Rectangle;
 import java.awt.geom.Point2D;
-import java.awt.image.BandedSampleModel;
 import java.awt.image.ColorModel;
 import java.awt.image.ComponentSampleModel;
 import java.awt.image.DataBuffer;
@@ -28,15 +27,17 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.util.Map;
+
 import org.eclipse.imagen.EnumeratedParameter;
 import org.eclipse.imagen.ImageLayout;
-import org.eclipse.imagen.JAI;
 import org.eclipse.imagen.RasterFactory;
 import org.eclipse.imagen.UntiledOpImage;
-import org.eclipse.imagen.operator.DFTDescriptor;
 import org.eclipse.imagen.media.util.JDKWorkarounds;
 import org.eclipse.imagen.media.util.MathJAI;
-import com.sun.medialib.mlib.*;
+import org.eclipse.imagen.operator.DFTDescriptor;
+
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * An OpImage class that performs a "DFT" and "IDFT" operations.

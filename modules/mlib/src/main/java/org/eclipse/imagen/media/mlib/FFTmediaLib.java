@@ -18,14 +18,11 @@
 package org.eclipse.imagen.media.mlib;
 
 import java.awt.image.DataBuffer;
-import java.text.NumberFormat;
-import java.util.Arrays;
-import java.util.Locale;
-import org.eclipse.imagen.operator.DFTDescriptor;
+
 import org.eclipse.imagen.media.opimage.FFT;
 import org.eclipse.imagen.media.util.MathJAI;
 
-import com.sun.medialib.mlib.*;
+import com.sun.medialib.mlib.Image;
 
 /**
  * The Fast Fourier Transform (FFT) class interface to mediaLib.

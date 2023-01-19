@@ -39,7 +39,7 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
-import java.awt.peer.ComponentPeer;
+//import java.awt.peer.ComponentPeer;
 import java.util.HashSet;
 import java.util.Iterator;
 import org.eclipse.imagen.Interpolation;

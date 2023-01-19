@@ -21,12 +21,14 @@ import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
-import org.eclipse.imagen.ImageLayout;
-import org.eclipse.imagen.OpImage;
-import org.eclipse.imagen.PointOpImage;
 import java.util.Map;
-import com.sun.medialib.mlib.*;
+
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PointOpImage;
+
 // import org.eclipse.imagen.media.test.OpImageTester;
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * A mediaLib implementation of "OrConst" operator.

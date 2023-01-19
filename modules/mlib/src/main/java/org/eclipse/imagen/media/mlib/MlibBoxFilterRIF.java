@@ -19,14 +19,9 @@ package org.eclipse.imagen.media.mlib;
 import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
-import java.awt.image.renderable.RenderedImageFactory;
 import java.util.Arrays;
-import java.util.Map;
-import org.eclipse.imagen.BorderExtender;
-import org.eclipse.imagen.ImageLayout;
+
 import org.eclipse.imagen.KernelJAI;
-import org.eclipse.imagen.media.opimage.RIFUtil;
-import com.sun.medialib.mlib.*;
 
 /**
  * A <code>RIF</code> supporting the "BoxFilter" operation in the rendered

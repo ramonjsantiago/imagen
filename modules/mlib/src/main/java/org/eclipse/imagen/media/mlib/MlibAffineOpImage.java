@@ -18,33 +18,25 @@
 package org.eclipse.imagen.media.mlib;
 import java.awt.Point;
 import java.awt.Rectangle;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Point2D;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
-import java.awt.image.renderable.ParameterBlock;
-import java.awt.image.renderable.RenderedImageFactory;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
+import java.util.Map;
+
 import org.eclipse.imagen.BorderExtender;
 import org.eclipse.imagen.GeometricOpImage;
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.Interpolation;
-import org.eclipse.imagen.InterpolationNearest;
-import org.eclipse.imagen.InterpolationBilinear;
 import org.eclipse.imagen.InterpolationBicubic;
 import org.eclipse.imagen.InterpolationBicubic2;
-import org.eclipse.imagen.KernelJAI;
-import org.eclipse.imagen.OpImage;
-import org.eclipse.imagen.PlanarImage;
-import org.eclipse.imagen.util.ImagingException;
-import org.eclipse.imagen.util.ImagingListener;
-import java.util.Map;
-import com.sun.medialib.mlib.*;
+import org.eclipse.imagen.InterpolationBilinear;
+import org.eclipse.imagen.InterpolationNearest;
 import org.eclipse.imagen.media.util.ImageUtil;
 // import org.eclipse.imagen.media.test.OpImageTester;
+import org.eclipse.imagen.util.ImagingException;
+import org.eclipse.imagen.util.ImagingListener;
 
 /**
  * An OpImage class to perform AffineTransform on a source image.

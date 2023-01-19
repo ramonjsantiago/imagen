@@ -32,11 +32,11 @@ import org.eclipse.imagen.RasterFactory ;
 import org.eclipse.imagen.tilecodec.TileCodecDescriptor ;
 import org.eclipse.imagen.tilecodec.TileCodecParameterList ;
 import org.eclipse.imagen.tilecodec.TileEncoderImpl ;
-import com.sun.image.codec.jpeg.JPEGEncodeParam ;
-import com.sun.image.codec.jpeg.JPEGImageEncoder ;
-import com.sun.image.codec.jpeg.JPEGCodec ;
-import com.sun.image.codec.jpeg.JPEGQTable ;
-import sun.awt.image.codec.JPEGParam ;
+import obsolete.image.codec.jpeg.JPEGEncodeParam;
+import obsolete.image.codec.jpeg.JPEGImageEncoder;
+import obsolete.image.codec.jpeg.JPEGCodec;
+import obsolete.image.codec.jpeg.JPEGQTable;
+import obsolete.awt.image.codec.JPEGParam;
 
 /**
  * A concrete implementation of the <code>TileEncoderImpl</code> class

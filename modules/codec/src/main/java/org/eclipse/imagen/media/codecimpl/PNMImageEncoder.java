@@ -90,8 +90,10 @@ public class PNMImageEncoder extends ImageEncoderImpl {
         SampleModel sampleModel = im.getSampleModel();
         ColorModel colorModel = im.getColorModel();
 
-        String ls = (String)java.security.AccessController.doPrivileged(
-               new sun.security.action.GetPropertyAction("line.separator"));
+//        String ls = (String)java.security.AccessController.doPrivileged(
+//               new sun.security.action.GetPropertyAction("line.separator"));
+        String ls = System.getProperty("line.separator");
+
         lineSeparator = ls.getBytes();
 
         int dataType = sampleModel.getTransferType();

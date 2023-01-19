@@ -18,21 +18,20 @@
 package org.eclipse.imagen.media.mlib;
 import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
-import java.awt.image.renderable.ParameterBlock;
-import java.awt.image.renderable.RenderedImageFactory;
+import java.util.Map;
+
 import org.eclipse.imagen.AreaOpImage;
 import org.eclipse.imagen.BorderExtender;
 import org.eclipse.imagen.ImageLayout;
-import org.eclipse.imagen.OpImage;
-import org.eclipse.imagen.RasterAccessor;
-import java.util.Map;
 import org.eclipse.imagen.operator.MedianFilterDescriptor;
 import org.eclipse.imagen.operator.MedianFilterShape;
-import com.sun.medialib.mlib.*;
+
+import com.sun.medialib.mlib.Constants;
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * An OpImage class that subclasses will use to perform

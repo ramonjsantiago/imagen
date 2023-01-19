@@ -32,7 +32,7 @@ import org.eclipse.imagen.media.codec.ImageDecodeParam;
 import org.eclipse.imagen.media.codec.JPEGDecodeParam;
 import org.eclipse.imagen.media.codecimpl.ImagingListenerProxy;
 import org.eclipse.imagen.media.codecimpl.util.ImagingException;
-import com.sun.image.codec.jpeg.ImageFormatException;
+import obsolete.image.codec.jpeg.ImageFormatException;
 
 /**
  * @since EA2
@@ -109,8 +109,8 @@ class JPEGImage extends SimpleRenderedImage {
         // in com.sun.image.codec.jpeg.JPEGImageDecoder implementation.
         BufferedImage image = null;
         synchronized(LOCK) {
-            com.sun.image.codec.jpeg.JPEGImageDecoder decoder =
-                com.sun.image.codec.jpeg.JPEGCodec.createJPEGDecoder(stream);
+            obsolete.image.codec.jpeg.JPEGImageDecoder decoder =
+                obsolete.image.codec.jpeg.JPEGCodec.createJPEGDecoder(stream);
             try {
                 // decodeAsBufferedImage performs default color conversions
                 image = decoder.decodeAsBufferedImage();

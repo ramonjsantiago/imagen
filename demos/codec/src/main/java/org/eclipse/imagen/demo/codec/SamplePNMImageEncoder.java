@@ -75,8 +75,10 @@ public class SamplePNMImageEncoder extends ImageEncoderImpl {
         int height = im.getHeight();
         SampleModel sampleModel = im.getSampleModel();
 
-        String ls = (String)java.security.AccessController.doPrivileged(
-               new sun.security.action.GetPropertyAction("line.separator"));
+//        String ls = (String)java.security.AccessController.doPrivileged(
+//               new sun.security.action.GetPropertyAction("line.separator"));
+        String ls = System.getProperty("line.separator");
+
         lineSeparator = ls.getBytes();
 
         int dataType = sampleModel.getTransferType();

@@ -42,9 +42,9 @@ import org.eclipse.imagen.RasterFactory;
 import org.eclipse.imagen.util.ImagingException;
 import org.eclipse.imagen.util.ImagingListener;
 import java.util.Map;
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGDecodeParam;
-import com.sun.image.codec.jpeg.JPEGImageDecoder;
+import obsolete.image.codec.jpeg.JPEGCodec;
+import obsolete.image.codec.jpeg.JPEGDecodeParam;
+import obsolete.image.codec.jpeg.JPEGImageDecoder;
 import org.eclipse.imagen.media.util.ImageUtil;
 
 /**

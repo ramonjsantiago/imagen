@@ -21,11 +21,14 @@ import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
+import java.util.Map;
+
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.PointOpImage;
-import java.util.Map;
 import org.eclipse.imagen.media.util.ImageUtil;
-import com.sun.medialib.mlib.*;
+
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * An <code>OpImage</code> implementing the "Threshold" operation

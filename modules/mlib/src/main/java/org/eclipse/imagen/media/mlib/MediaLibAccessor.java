@@ -18,34 +18,31 @@
 package org.eclipse.imagen.media.mlib;
 import java.awt.Rectangle;
 import java.awt.image.ColorModel;
-import java.awt.image.ComponentSampleModel;
 import java.awt.image.ComponentColorModel;
+import java.awt.image.ComponentSampleModel;
 import java.awt.image.DataBuffer;
 import java.awt.image.DataBufferByte;
-import java.awt.image.DataBufferShort;
 import java.awt.image.DataBufferInt;
+import java.awt.image.DataBufferShort;
 import java.awt.image.DataBufferUShort;
 import java.awt.image.Raster;
+import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
-import java.io.FileNotFoundException;
 import java.io.FilePermission;
-import java.io.InputStream;
-import java.io.IOException;
-import java.lang.NoClassDefFoundError;
-import java.security.AccessControlException;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
+
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.JAI;
-import org.eclipse.imagen.RasterAccessor;
-import org.eclipse.imagen.util.ImagingListener;
 import org.eclipse.imagen.media.util.DataBufferUtils;
 import org.eclipse.imagen.media.util.ImageUtil;
-import org.eclipse.imagen.media.util.PropertyUtil;
-import com.sun.medialib.mlib.*;
+import org.eclipse.imagen.util.ImagingListener;
+
+import com.sun.medialib.mlib.Constants;
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  *  An adapter class for presenting image data in a mediaLibImage

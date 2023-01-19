@@ -694,35 +694,35 @@ public class TIFFImageEncoder extends ImageEncoderImpl {
         }
 
         // Initialize some JPEG variables.
-        com.sun.image.codec.jpeg.JPEGEncodeParam jpegEncodeParam = null;
-        com.sun.image.codec.jpeg.JPEGImageEncoder jpegEncoder = null;
+        obsolete.image.codec.jpeg.JPEGEncodeParam jpegEncodeParam = null;
+        obsolete.image.codec.jpeg.JPEGImageEncoder jpegEncoder = null;
         int jpegColorID = 0;
 
         if(compression == COMP_JPEG_TTN2) {
 
             // Initialize JPEG color ID.
             jpegColorID =
-                com.sun.image.codec.jpeg.JPEGDecodeParam.COLOR_ID_UNKNOWN;
+                obsolete.image.codec.jpeg.JPEGDecodeParam.COLOR_ID_UNKNOWN;
             switch(imageType) {
             case TIFF_GRAY:
             case TIFF_PALETTE:
                 jpegColorID =
-                    com.sun.image.codec.jpeg.JPEGDecodeParam.COLOR_ID_GRAY;
+                    obsolete.image.codec.jpeg.JPEGDecodeParam.COLOR_ID_GRAY;
                 break;
             case TIFF_RGB:
                 jpegColorID =
-                    com.sun.image.codec.jpeg.JPEGDecodeParam.COLOR_ID_RGB;
+                    obsolete.image.codec.jpeg.JPEGDecodeParam.COLOR_ID_RGB;
                 break;
             case TIFF_YCBCR:
                 jpegColorID =
-                    com.sun.image.codec.jpeg.JPEGDecodeParam.COLOR_ID_YCbCr;
+                    obsolete.image.codec.jpeg.JPEGDecodeParam.COLOR_ID_YCbCr;
                 break;
             }
 
             // Get the JDK encoding parameters.
             Raster tile00 = im.getTile(im.getMinTileX(), im.getMinTileY());
             jpegEncodeParam =
-                com.sun.image.codec.jpeg.JPEGCodec.getDefaultJPEGEncodeParam(
+                obsolete.image.codec.jpeg.JPEGCodec.getDefaultJPEGEncodeParam(
                     tile00, jpegColorID);
 
             // Modify per values passed in.
@@ -736,7 +736,7 @@ public class TIFFImageEncoder extends ImageEncoderImpl {
                 ByteArrayOutputStream tableStream =
                     new ByteArrayOutputStream();
                 jpegEncoder =
-                    com.sun.image.codec.jpeg.JPEGCodec.createJPEGEncoder(
+                    obsolete.image.codec.jpeg.JPEGCodec.createJPEGEncoder(
                         tableStream,
                         jpegEncodeParam);
                 jpegEncoder.encode(tile00);
@@ -1278,7 +1278,7 @@ public class TIFFImageEncoder extends ImageEncoderImpl {
                            jpegEncodeParam.getHeight() != src.getHeight()) {
 
                             jpegEncodeParam =
-                                com.sun.image.codec.jpeg.JPEGCodec.
+                                obsolete.image.codec.jpeg.JPEGCodec.
                                 getDefaultJPEGEncodeParam(src, jpegColorID);
 
                             JPEGImageEncoder.modifyEncodeParam(jep,
@@ -1286,7 +1286,7 @@ public class TIFFImageEncoder extends ImageEncoderImpl {
                                                                numBands);
 
                             jpegEncoder =
-                                com.sun.image.codec.jpeg.JPEGCodec.
+                                obsolete.image.codec.jpeg.JPEGCodec.
                                 createJPEGEncoder(output,
                                                   jpegEncodeParam);
                         }

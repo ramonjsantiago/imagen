@@ -19,10 +19,11 @@ package org.eclipse.imagen.media.mlib;
 
 import java.awt.image.DataBuffer;
 import java.util.Arrays;
+
 import org.eclipse.imagen.media.opimage.FCT;
 import org.eclipse.imagen.media.util.MathJAI;
 
-import com.sun.medialib.mlib.*;
+import com.sun.medialib.mlib.Image;
 
 /**
  * The Fast Cosine Transform (FCT) class. This classes calculates the FCT

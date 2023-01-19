@@ -38,10 +38,10 @@ import org.eclipse.imagen.media.codec.SeekableStream;
 import org.eclipse.imagen.media.codecimpl.SimpleRenderedImage;
 import org.eclipse.imagen.media.codecimpl.util.RasterFactory;
 
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGDecodeParam;
-import com.sun.image.codec.jpeg.JPEGEncodeParam;
-import com.sun.image.codec.jpeg.JPEGImageDecoder;
+import obsolete.image.codec.jpeg.JPEGCodec;
+import obsolete.image.codec.jpeg.JPEGDecodeParam;
+import obsolete.image.codec.jpeg.JPEGEncodeParam;
+import obsolete.image.codec.jpeg.JPEGImageDecoder;
 import org.eclipse.imagen.media.codecimpl.ImagingListenerProxy;
 import org.eclipse.imagen.media.codecimpl.util.ImagingException;
 

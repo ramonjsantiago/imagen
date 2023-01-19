@@ -20,15 +20,15 @@ import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.PixelInterleavedSampleModel;
 import java.awt.image.WritableRaster;
-import org.eclipse.imagen.ImageLayout;
-import org.eclipse.imagen.OpImage;
-import org.eclipse.imagen.PointOpImage;
 import java.util.Map;
-import com.sun.medialib.mlib.*;
+
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PointOpImage;
+
 // import org.eclipse.imagen.media.test.OpImageTester;
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * An OpImage that performs the Xor operation on 2 images through mediaLib.

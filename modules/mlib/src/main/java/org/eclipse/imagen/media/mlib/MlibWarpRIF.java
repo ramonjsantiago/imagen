@@ -20,21 +20,21 @@ import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderedImageFactory;
+
 import org.eclipse.imagen.BorderExtender;
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.Interpolation;
-import org.eclipse.imagen.InterpolationNearest;
-import org.eclipse.imagen.InterpolationBilinear;
 import org.eclipse.imagen.InterpolationBicubic;
 import org.eclipse.imagen.InterpolationBicubic2;
+import org.eclipse.imagen.InterpolationBilinear;
+import org.eclipse.imagen.InterpolationNearest;
 import org.eclipse.imagen.InterpolationTable;
-import java.util.Map;
 import org.eclipse.imagen.Warp;
 import org.eclipse.imagen.WarpGrid;
 import org.eclipse.imagen.WarpPolynomial;
 import org.eclipse.imagen.media.opimage.RIFUtil;
 
-import com.sun.medialib.mlib.*;
+import com.sun.medialib.mlib.Constants;
 
 /**
  * A <code>RIF</code> supporting the "Warp" operation in the

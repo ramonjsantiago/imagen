@@ -22,16 +22,18 @@ import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
+import java.util.Map;
+
 import org.eclipse.imagen.BorderExtender;
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.Interpolation;
-import java.util.Map;
-import org.eclipse.imagen.RasterFactory;
-import org.eclipse.imagen.WarpOpImage;
 import org.eclipse.imagen.WarpGrid;
-
-import com.sun.medialib.mlib.*;
+import org.eclipse.imagen.WarpOpImage;
 import org.eclipse.imagen.media.util.ImageUtil;
+
+import com.sun.medialib.mlib.Constants;
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * An <code>OpImage</code> implementing the Grid "Warp" operation

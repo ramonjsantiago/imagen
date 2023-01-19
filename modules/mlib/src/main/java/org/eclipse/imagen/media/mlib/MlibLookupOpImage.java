@@ -24,13 +24,15 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.util.Map;
+
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.LookupTableJAI;
-import org.eclipse.imagen.PlanarImage;
 import org.eclipse.imagen.PointOpImage;
 import org.eclipse.imagen.media.util.ImageUtil;
 import org.eclipse.imagen.media.util.JDKWorkarounds;
-import com.sun.medialib.mlib.*;
+
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 final class MlibLookupOpImage extends PointOpImage {
     private LookupTableJAI table;

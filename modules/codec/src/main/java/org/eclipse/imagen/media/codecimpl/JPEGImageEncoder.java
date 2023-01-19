@@ -38,8 +38,8 @@ import org.eclipse.imagen.media.codec.JPEGEncodeParam;
 // Need these classes since we are currently using the
 // Java2D JpegEncoder for our Jpeg Implementation.
 //
-import com.sun.image.codec.jpeg.JPEGQTable;
-import com.sun.image.codec.jpeg.JPEGDecodeParam;
+import obsolete.image.codec.jpeg.JPEGQTable;
+import obsolete.image.codec.jpeg.JPEGDecodeParam;
 import org.eclipse.imagen.media.codecimpl.ImagingListenerProxy;
 import org.eclipse.imagen.media.codecimpl.util.ImagingException;
 
@@ -71,7 +71,7 @@ public class JPEGImageEncoder extends ImageEncoderImpl {
     // com.sun.image.codec.jpeg.JPEGEncodeParam object.
     //
     static void modifyEncodeParam(JPEGEncodeParam jaiEP,
-          com.sun.image.codec.jpeg.JPEGEncodeParam j2dEP,
+        obsolete.image.codec.jpeg.JPEGEncodeParam j2dEP,
                                                int nbands) {
 
         int val;
@@ -122,7 +122,7 @@ public class JPEGImageEncoder extends ImageEncoderImpl {
         // Write the JFIF (APP0) marker
         if (jaiEP.getWriteJFIFHeader() == false) {
             j2dEP.setMarkerData(
-              com.sun.image.codec.jpeg.JPEGDecodeParam.APP0_MARKER, null);
+                obsolete.image.codec.jpeg.JPEGDecodeParam.APP0_MARKER, null);
         }
 
     }
@@ -264,8 +264,8 @@ public class JPEGImageEncoder extends ImageEncoderImpl {
         }
 
         // Create the Java2D encodeParam based on the BufferedImage
-        com.sun.image.codec.jpeg.JPEGEncodeParam j2dEP =
-            com.sun.image.codec.jpeg.JPEGCodec.getDefaultJPEGEncodeParam(bi);
+        obsolete.image.codec.jpeg.JPEGEncodeParam j2dEP =
+            obsolete.image.codec.jpeg.JPEGCodec.getDefaultJPEGEncodeParam(bi);
 
         // Now modify the Java2D encodeParam based on the options set
         // in the JAI encodeParam object.
@@ -274,8 +274,8 @@ public class JPEGImageEncoder extends ImageEncoderImpl {
         }
 
         // Now create the encoder with the modified Java2D encodeParam
-        com.sun.image.codec.jpeg.JPEGImageEncoder encoder;
-        encoder = com.sun.image.codec.jpeg.JPEGCodec.createJPEGEncoder(
+        obsolete.image.codec.jpeg.JPEGImageEncoder encoder;
+        encoder = obsolete.image.codec.jpeg.JPEGCodec.createJPEGEncoder(
                     output, j2dEP);
 
         try {

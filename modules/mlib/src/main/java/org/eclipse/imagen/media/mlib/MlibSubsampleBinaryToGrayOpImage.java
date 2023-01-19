@@ -16,31 +16,19 @@
  */
 
 package org.eclipse.imagen.media.mlib;
-import java.awt.image.RenderedImage;
-import org.eclipse.imagen.ImageLayout;
-import org.eclipse.imagen.Interpolation;
-import java.util.Map;
 import java.awt.Rectangle;
-import java.awt.geom.Point2D;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
 import java.awt.image.DataBuffer;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.PixelInterleavedSampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.PixelInterleavedSampleModel;
-import org.eclipse.imagen.ImageLayout;
+import java.awt.image.Raster;
+import java.awt.image.RenderedImage;
+import java.awt.image.WritableRaster;
 import java.util.Map;
-import org.eclipse.imagen.GeometricOpImage;
-import com.sun.medialib.mlib.*;
-import org.eclipse.imagen.media.util.ImageUtil;
-import org.eclipse.imagen.media.util.JDKWorkarounds;
-import org.eclipse.imagen.PlanarImage;
+
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.ScaleOpImage;
 import org.eclipse.imagen.media.opimage.SubsampleBinaryToGrayOpImage;
+
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * A mediaLib class extending <code>GeometricOpImage</code> to

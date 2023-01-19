@@ -30,7 +30,7 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-import java.awt.peer.ComponentPeer;
+//import java.awt.peer.ComponentPeer;
 import org.eclipse.imagen.JAI;
 import org.eclipse.imagen.PlanarImage;
 import org.eclipse.imagen.Interpolation;

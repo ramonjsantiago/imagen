@@ -17,19 +17,19 @@
 
 package org.eclipse.imagen.media.mlib;
 import java.awt.Rectangle;
-import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
 import java.util.Map;
+
 import org.eclipse.imagen.ImageLayout;
-import org.eclipse.imagen.OpImage;
-import org.eclipse.imagen.PlanarImage;
 import org.eclipse.imagen.PointOpImage;
 import org.eclipse.imagen.RasterFactory;
 import org.eclipse.imagen.media.util.ImageUtil;
 import org.eclipse.imagen.media.util.JDKWorkarounds;
-import com.sun.medialib.mlib.*;
+
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * An OpImage class that extracts (a) selected band(s) from an image.

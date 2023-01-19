@@ -33,11 +33,11 @@ import org.eclipse.imagen.tilecodec.TileCodecDescriptor;
 import org.eclipse.imagen.tilecodec.TileCodecParameterList;
 import org.eclipse.imagen.tilecodec.TileDecoderImpl;
 import org.eclipse.imagen.util.ImagingListener;
-import com.sun.image.codec.jpeg.JPEGDecodeParam;
-import com.sun.image.codec.jpeg.JPEGImageDecoder;
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGQTable;
-import sun.awt.image.codec.JPEGParam;
+import obsolete.image.codec.jpeg.JPEGDecodeParam;
+import obsolete.image.codec.jpeg.JPEGImageDecoder;
+import obsolete.image.codec.jpeg.JPEGCodec;
+import obsolete.image.codec.jpeg.JPEGQTable;
+import obsolete.awt.image.codec.JPEGParam;
 import org.eclipse.imagen.media.util.ImageUtil;
 /**
  * A concrete implementation of the <code>TileDecoderImpl</code> class

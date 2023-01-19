@@ -34,7 +34,7 @@ import java.awt.ScrollPane;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.Container;
-import java.awt.peer.ScrollPanePeer;
+//import java.awt.peer.ScrollPanePeer;
 
 /**
  * An extension of java.awt.Panel that contains an ImageCanvas and

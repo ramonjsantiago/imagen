@@ -21,19 +21,16 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-import java.awt.image.renderable.ParameterBlock;
-import java.awt.image.renderable.RenderedImageFactory;
-import org.eclipse.imagen.AreaOpImage;
+import java.util.Map;
+
 import org.eclipse.imagen.BorderExtender;
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.Interpolation;
-import org.eclipse.imagen.InterpolationBilinear;
-import org.eclipse.imagen.KernelJAI;
-import org.eclipse.imagen.OpImage;
-import java.util.Map;
-import com.sun.medialib.mlib.*;
+
+import com.sun.medialib.mlib.Constants;
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 // import org.eclipse.imagen.media.test.OpImageTester;
 

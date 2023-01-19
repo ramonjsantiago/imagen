@@ -19,21 +19,20 @@ package org.eclipse.imagen.media.mlib;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
-import java.awt.image.renderable.ParameterBlock;
-import java.awt.image.renderable.RenderedImageFactory;
+import java.util.Map;
+
 import org.eclipse.imagen.AreaOpImage;
 import org.eclipse.imagen.BorderExtender;
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.JAI;
 import org.eclipse.imagen.KernelJAI;
-import org.eclipse.imagen.OpImage;
-import java.util.Map;
-import com.sun.medialib.mlib.*;
+
 // import org.eclipse.imagen.media.test.OpImageTester;
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
 
 /**
  * An OpImage class to perform dilation on a source image

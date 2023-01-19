@@ -21,13 +21,17 @@ import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
+import java.util.Map;
+
 import org.eclipse.imagen.BorderExtender;
 import org.eclipse.imagen.ImageLayout;
 import org.eclipse.imagen.Interpolation;
 import org.eclipse.imagen.InterpolationTable;
-import org.eclipse.imagen.OpImage;
-import java.util.Map;
-import com.sun.medialib.mlib.*;
+
+import com.sun.medialib.mlib.Constants;
+import com.sun.medialib.mlib.Image;
+import com.sun.medialib.mlib.mediaLibImage;
+import com.sun.medialib.mlib.mediaLibImageInterpTable;
 
 
 
